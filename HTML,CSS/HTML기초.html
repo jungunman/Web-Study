@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML Study, CSS Study, Javascript Study">
+    <meta name="description" content="HTML,CSS 및 JavaScript를 공부하는 페이지 입니다.">
+    <meta name="author" content="정운만">
+    <meta name="refresh" content="6000">
+
+    <title>HTML, CSS, JavaScript Study</title>
+</html>
+<body>
+    <h1 id="HTML구간">HTML 구간</h1>
+    <h2>글자 태그</h2>
+    <p>이곳은 HTML을 시작으로 CSS라는 옷을 입힌 다음 동적인 페이지로 만들기 위해 Java script를 적용시킬 페이지입니다.</p>
+    <b>굵게 만들기 - 세멘틱X</b>
+    <strong>굵게 만들기와 같지만 세멘틱웹에 영향.</strong>
+    <i>Italic체(기울기) - 세멘틱X</i>
+    <em>Italic체(기울기) - 세멘틱웹에 영향</em>
+    <h3>H3 내부 <small>(작게 만들기)</small> 입니다</h3>
+    <mark>색칠하기-Highlighted text</mark><br>
+    <del>삭제 표시</del><br>
+    <ins>밑줄 긋기</ins><br>
+    <sub>작게해서 아래로 살짝 글 내리기</sub><br>
+    <sup>작게해서 위로 살짝 글 올리기</sup>
+    <br>
+    <br>
+    <h2>본문 테그</h2>
+    <p>인라인 태그 - 단락을 지정한다. 엔터는 적용 X, 띄어쓰기 2회 이상 X</p>
+    <p>연속적인 띄어쓰기는 \&nbsp\;를 연속적으로&nbsp;&nbsp;&nbsp; 하면 된다.</p>
+    <pre>
+형식화된 TEXT를 지정한다. 
+
+이 태그 내에서는 띄어쓰기나 엔터등이 그대로 표현된다.
+
+    </pre>
+    <hr>
+    <p>위의 줄은 hr태그이다.</p>
+    <q>짧은 인용문에 사용</q>
+    <blockquote>긴 이용문에 사용합니다</blockquote>
+
+    <hr>
+    <h2>href 어트리 뷰트</h2>
+    <a href="http://www.google.com"> href에 적힌 주소로 이동</a><br>
+    <a href="mailto:jin02014@naver.com?Subject=안녕하세요">메일 보내기</a><br>
+    <a href="javascript:alert('hello');">Javascript도 적용 가능</a><br>
+    <a href="#HTML구간">HTML 구간으로 가기</a><br>
+    <a href="http://google.com" target="_self">링크를 클릭했을 때 현제 페이지에서 열기</a><br>
+    <a href="http://google.com" target="_blank">링크를 클릭했을 때 새로운 페이지에서 열기</a><br>
+
+    <hr>
+    <h2>목록</h2>
+    <h3>순서가 없는 목록 - Unordered list</h3>
+    <ul>
+        <li>ul은 앞에 점이 생긴다.</li>
+        <li>CSS로 점을 없앨 수 있다.</li>
+    </ul>
+    <h3>순서가 있는 목록 - Ordered list</h3>
+    <ol>
+        <li>ol은 앞에 숫자가 생긴다.</li>
+        <li>ul,ol 둘다 안에 li태그를 써서 작성해야 함.</li>
+        <li>ol태그에 Type을 사용하여 숫자를 로마나 알파벳 등으로 변형할 수 있다.</li>
+        <li>ol태그에 Start 속성으로 시작 번호를 설정할 수 있다.</li>
+        <li value="7">value 속성을 사용하여 임의의 숫자를 지정할 수 있다. </li>
+    </ol>
+    <h3>중첩 목록</h3>
+    <ul>
+        <li>ul테그 안에 ol테그를 중첩하여 사용</li>
+        <li>ul 내부입니다
+            <ol>
+                <li>ol 내부입니다</li>
+                <li>알겠습니다.</li>
+            </ol>
+        </li>
+        <li>알겠습니다</li>
+    </ul>
+    
+    <ol>
+        <li>ol테그 안에 ul테그를 중첩하여 사용</li>
+        <li>ol 내부입니다
+            <ul>
+                <li>ul 내부입니다</li>
+                <li>알겠습니다.</li>
+                <li>중첩으로 사용할 경우 검은 원이 아닌 흰 원입니다.</li>
+            </ul>
+        </li>
+        <li>알겠습니다</li>
+    </ol>
+
+    <h3>테이블</h3>
+    <table border="1">
+        <tr>
+            <th>th - 행 내부의 제목 셀</th>
+            <td>td - 행 내부의 일반 셀</td>
+            <td>table에서 속성으로 border 설정하는 것보다 css로 처리하는 게 좋다</td>
+        </tr>
+        <tr>
+            <th>두 번째 행</th>
+            <td>테이블 맞추기</td>
+            <td>th는 bold 처리되어있는 것을 알 수 있다.</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>Form 태그</h2>
+    <p>Form 태그는 사용자가 입력한 데이터를 수집하며, 입력 양식 태그를 포함할 수 있다.</p>
+
+    <table border="1">
+        <tr>
+            <th>속성(Attribute)</th>
+            <th>값(Value)</th>
+            <th>내용(Description)</th>
+        </tr>
+        <tr>
+            <td>action</td>
+            <td>URL</td>
+            <td>입력 데이터</td>
+        </tr>
+        <tr>
+            <td>method</td>
+            <td>GET / POST</td>
+            <td>입력 데이터</td>
+        </tr>
+    </table>
+</body>
